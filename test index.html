@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Art Portfolio</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #315138;
+            color: #ebe3bf;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center; /* Center-align category headings */
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Style for the cover image */
+        .cover-image {
+            max-width: 45%; /* Ensure the image doesn't exceed the width of its container */
+            height: auto; /* Allow the height to adjust proportionally */
+            transform: rotate(50deg); /* Rotate the image 90 degrees clockwise */
+            border-radius: 5px;
+            margin-bottom: 20px; /* Add some spacing between the image and the header text */
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .category h2 {
+            margin-bottom: 40px;
+            text-align: center; /* Center-align category headings */
+        }
+
+        .category h3 {
+            margin-bottom: 40px;
+            text-align: center; /* Center-align category headings */
+        }
+
+        .slider {
+            max-width: 400px; /* Adjust the maximum width of the carousel */
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .slides {
+             display: flex; /* Use flexbox for carousel items */
+        }
+
+        .slides img {
+            width: 90%; /* Ensure images fill their container */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the entire container */
+        }
+
+        .mural-slider {
+            max-width: 800px; /* Adjust the maximum width of the carousel */
+            margin: 0 auto;
+            overflow: hidden;
+            height: 400px; /* Adjust the height of the carousel for landscape images */
+        }
+
+
+        .mural-slider .slides {
+            display: flex; /* Use flexbox for carousel items */
+            font-size: 110px; /* Change the font size as needed */
+        }
+
+        .mural-slider .slides img {
+            width: auto; /* Allow the width to adjust based on image aspect ratio */
+            max-height: 100%; /* Limit the height of the images to fit within the carousel */
+            object-fit: cover; /* Cover the entire container */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Use the cover-image class for styling -->
+        <img class="cover-image" src="IMG_5539.PNG" alt="cover image">
+        <h1>Artsy Expressions</h1>
+        <p>"Welcome to 'Artsy Expressions,' where my vibrant world of art comes to life. Hailing from the bustling streets of Delhi, India, I am a young artist with big dreams.
+            Now based in Australia, I am eager to share my passion for art with the world. Through my creations, I aim to captivate audiences, offering a glimpse
+            into my cultural roots while embracing the beauty of my new home. Join me on this journey as I strive to turn my passion into a profession,
+            pouring my heart and soul into every brushstroke, with the hope of inspiring others and leaving a lasting impression."</p>
+    </header>
+
+    <div class="container">
+        <h2>About Me</h2>
+
+        <p>Welcome to my world of artistic exploration, where colors dance and imagination takes flight.
+            I am Dona Benny, a soul nurtured amidst the vibrant streets of Delhi, India, where every corner whispers tales of inspiration.
+            Rooted in the rich cultural tapestry of my homeland, I embarked on a journey of academic pursuit, attaining a Bachelor's in Commerce (Hons)
+            followed by a Master's in Business Administration. However, my quest for knowledge and creativity knows no bounds, leading me to the
+            enchanting shores of Australia, where I now delve into the intricacies of Digital Media for my second Master's degree.
+
+            With over four years of traversing the dynamic realms of advertising, I've had the privilege of crafting narratives for esteemed
+            clients like SBI Cards, India Today, and Niti Aayog, each project a canvas for innovation and storytelling.
+            Yet, amidst the hustle and bustle of corporate endeavors, art remained my steadfast companion, not merely a pastime,
+            but a sanctuary for my spirit, a balm for my restless mind, and a conduit for channeling emotions.
+
+            Today, as I immerse myself in the realm of digital marketing, I am driven by a fervent desire to fuse my academic prowess
+            with my lifelong passion for art. For me, art is not just about creating beauty; it's a medium of expression, a language that
+            transcends barriers and resonates with the soul of humanity. Through the digital expanse, I aim to showcase my creations to a global
+            audience, inviting one and all to embark on this journey of creativity and connection. Together, let us ascend the ladder of artistic
+            exploration, painting the digital landscape with hues of inspiration and possibility.
+            
+            Join me as we unveil the symphony of colors, where every stroke tells a story, and every pixel pulsates with life.
+            Together, let's embrace the transformative power of art and usher in a new era of creative awakening.</p>
+
+        
+        <div class="category">
+            <h2>Natural Art</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <!-- Artwork images for Category 1 -->
+                        <img src="IMG_5516.JPG" alt="Artwork 1">
+                        <img src="IMG_5515.JPG" alt="Artwork 2">
+                        <img src="IMG_5517.JPG" alt="Artwork 3">
+                        <!-- Add more images for Category 1 -->
+                    </div>
+                </div>
+            </div>
+    
+            <div class="category">
+                <h2>Mandalas</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <!-- Artwork images for Category 2 -->
+                        <img src="IMG_5519.JPG" alt="Artwork 1">
+                        <img src="IMG_5521.JPG" alt="Artwork 2">
+                        <img src="IMG_5518.JPG" alt="Artwork 3">
+                        <!-- Add more images for Category 2 -->
+                        </div>
+                    </div>
+                </div>
+
+            <div class="category">
+                 <h3>Wall Murals</h3>
+                 <div class="slider mural-slider">
+                     <div class="slides">
+                        <!-- Artwork images for Category 3 -->
+                        <img src="IMG_5525.JPG" alt="Artwork 1">
+                        <img src="IMG_5526.JPG" alt="Artwork 2">
+                        <!-- Add more images for Category 3 -->
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Add more categories as needed -->
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
+        <script>
+            var sliders = document.querySelectorAll('.slider');
+            sliders.forEach(function (slider) {
+                var slideWrapper = slider.querySelector('.slides');
+                tns({
+                    container: slideWrapper,
+                    items: 1,
+                    slideBy: 'page',
+                    autoplay: true,
+                    autoplayButtonOutput: false,
+                    mouseDrag: true,
+                    swipeAngle: false,
+                    speed: 400,
+                    controls: false,
+                    nav: true,
+                    navPosition: 'bottom',
+                    loop: true
+                });
+            });
+        </script>
+
+        <h2>Contact Details</h2>
+        <p>Interested in my work? Fill out the form below to get in touch.</p>
+        <form action="mailto:bennydona1995@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+
+</html>
